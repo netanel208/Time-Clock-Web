@@ -27,3 +27,7 @@ The server will create token for this user hence he will stay logged in each pag
   - Shift end time
   - Duration of the shift(update every time until the user press `End` button)
   
+## Profile
+![](https://github.com/netanel208/Time-Clock-Web/blob/master/images/%E2%80%8F%E2%80%8F3.PNG)
+
+- The user can update his personal details (apart from login details such as: email) and save them.
