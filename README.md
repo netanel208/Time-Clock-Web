@@ -6,7 +6,7 @@
 - run `cd <project dir>`
 - run `npm run dev`
 
-Note: you need to use npm to install require modules.
+Note: You need to use npm to install require modules in the root and in client folder.
 
 ### Login
 ![](https://github.com/netanel208/Time-Clock-Web/blob/master/images/2.PNG)
@@ -18,3 +18,12 @@ try:
 The server will create token for this user hence he will stay logged in each page.
 
 ## Home
+![](https://github.com/netanel208/Time-Clock-Web/blob/master/images/6.PNG)
+
+- The logged in username is now displayed at the top of the site.
+- If you press the Start button a new shift starts, you can see the following data:
+  - Date
+  - Shift start time
+  - Shift end time
+  - Duration of the shift(update every time until the user press `End` button)
+  
