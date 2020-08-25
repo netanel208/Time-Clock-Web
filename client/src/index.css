@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Baloo Tamma 2';
+}
+
+.wrapper-common {
+  padding-top: 60px;
+  padding-left: 200px;
+}
+
+.wrapper-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% auto;
+}
+
+.login-form {
+  border: 2px solid grey;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.wrapper-not-found {
+  margin: 10% auto;
+  font-size: 2em;
+  font-weight: bold;
+  color: #282c34;
+  text-align: center;
+}
+
+.wrapper-header {
+  height: 60px;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 2em;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.wrapper-content {
+  display: flex;
+  min-height: calc(100vh - 60px);
+}
+
+.wrapper-main {
+  border: 0px none;
+  padding: 10px;
+  width: 100%
+}
+
+.wrapper-navigation {
+  background-color: cornflowerblue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  position: fixed;
+  top: 60px;
+  bottom: 0px;
+  left: 0;
+  width: 200px;
+}
+
+.title {
+  margin: 5px;
+  font-size: 1.5em;
+  align-self: center;
+}
+
+.field {
+  margin: 5px;
+}
+
+.hello-user {
+  color: white;
+  margin: 0 auto;
+}
+
+.container {
+  border: 1px solid;
+  border-radius: 0px 40px 40px 40px;
+  border-color: cornflowerblue;
+}
+
+.row {
+  display: flex;
+  margin: 0 auto;
+}
+
+.col {
+  display: grid;
+  margin: 0 auto;
+}
+
+.button {
+  margin: 5px;
+  height: 30px;
+}
+
+.navigation-link {
+  border-top: 2px solid white;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.navigation-link:hover {
+  background-color: lightblue;
+}
+
+.shifts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shift-item {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid wheat;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  background-color:rgb(207, 207, 207);
+  color: white;
+  margin: 5px;
+  outline: none;
+  width: 60px;
+  height: 30px;
+}
+
+.shifts-buttons {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
