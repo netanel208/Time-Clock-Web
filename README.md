@@ -17,7 +17,7 @@ try:
 
 The server will create token for this user hence he will stay logged in each page.
 
-## Home
+### Home
 ![](https://github.com/netanel208/Time-Clock-Web/blob/master/images/6.PNG)
 
 - The logged in username is now displayed at the top of the site.
@@ -27,7 +27,16 @@ The server will create token for this user hence he will stay logged in each pag
   - Shift end time
   - Duration of the shift(update every time until the user press `End` button)
   
-## Profile
+### Profile
 ![](https://github.com/netanel208/Time-Clock-Web/blob/master/images/%E2%80%8F%E2%80%8F3.PNG)
 
 - The user can update his personal details (apart from login details such as: email) and save them.
+
+### Database(MongoDB)
+Use database in cloud.
+
+#### Users
+![](https://github.com/netanel208/Time-Clock-Web/blob/master/images/4.PNG)
+
+#### Shifts
+![](https://github.com/netanel208/Time-Clock-Web/blob/master/images/%E2%80%8F%E2%80%8F5.PNG)
