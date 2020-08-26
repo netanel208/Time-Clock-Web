@@ -1,4 +1,5 @@
-import React, { useEffect, useState, Component } from 'react';
+import React, { useState} from 'react';
+import { useHistory } from "react-router-dom";
 import { getUserFullDetails, updateUser} from "../../../api/api";
 
 const ProfilePage = () => {
@@ -6,6 +7,7 @@ const ProfilePage = () => {
     var [user_phone, setUserPhone] = useState("");
     var [user_city, setUserCity] = useState("");
     var [user_address, setUserAddress] = useState("");
+    let history = useHistory();
 
     getUserFullDetails().then((res) => {
       setUserName(res.name);
@@ -26,7 +28,7 @@ const ProfilePage = () => {
             address: document.getElementById("address").value
         };
         console.log(userData);
-        updateUser(userData);
+        updateUser(userData).then((res) => (history.go(0)));
     };
 
     return (
@@ -44,11 +46,9 @@ const ProfilePage = () => {
                 <input
                   id="name"
                   type="text"
-                  value={user_name}
+                  defaultValue={user_name}
                   onChange={e => setUserName(e.target.value)}
-                  onClick={e => (e.target.value="")}
                   placeholder="Full Name"
-                  disabled
                 />
               </div>
               <div className="input-field col s12">
@@ -65,11 +65,9 @@ const ProfilePage = () => {
                 <input
                   id="phone"
                   type="phone"
-                  value={user_phone}
+                  defaultValue={user_phone}
                   onChange={e => setUserPhone(e.target.value)}
-                  onClick={e => (e.target.value="")}
                   placeholder="Phone Number"
-                  disabled
                 />
               </div>
               <div className="input-field col s12">
@@ -77,10 +75,9 @@ const ProfilePage = () => {
                 <input
                   id="city"
                   type="text"
-                  value={user_city}
-                  onChange={setUserCity}
+                  defaultValue={user_city}
+                  onChange={e => setUserCity(e.target.value)}
                   placeholder="City"
-                  disabled
                 />
               </div>
               <div className="input-field col s12">
@@ -88,10 +85,9 @@ const ProfilePage = () => {
                 <input
                   id="address"
                   type="text"
-                  value={user_address}
-                  onChange={setUserAddress}
+                  defaultValue={user_address}
+                  onChange={e => setUserAddress(e.target.value)}
                   placeholder="Address"
-                  disabled
                 />
               </div>
               <div className="col s12" style={{ paddingLeft: "11.250px" }}>
