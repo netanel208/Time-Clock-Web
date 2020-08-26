@@ -17,7 +17,6 @@ const ProfilePage = () => {
       return res;
     })
 
-
     const submitHandler = (e) => {
         e.preventDefault();
         console.log(document.getElementById("name").placeholder);
